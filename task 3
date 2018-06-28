@@ -1,0 +1,10 @@
+function countOddEvenNumbers(n){ 
+    var num = n.toString();
+    var result = {odd:0, even:0};
+    for (var i = 0; i < num.length; i++) {
+		const type = num[i] % 2 ?  'odd' : 'even';
+      	result[type]++;}
+return result;
+}
+
+console.log(countOddEvenNumbers(1234567890));
